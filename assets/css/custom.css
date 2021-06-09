@@ -1,0 +1,362 @@
+.normal__text {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.text-dark {
+  color: black !important;
+}
+
+.text-bold {
+  font-weight: 700 !important;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.ml-1 {
+  margin-left: 10px;
+}
+
+.ml-2 {
+  margin-left: 20px;
+}
+
+.ml-3 {
+  margin-left: 30px;
+}
+
+.ml-4 {
+  margin-left: 40px;
+}
+
+.ml-5 {
+  margin-left: 50px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-caption {
+  display: none;
+}
+
+.btn-circle {
+  background: blue;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 100%;
+}
+
+.icon {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: red;
+}
+
+.service__icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+
+.carousel-inner>.item>img {
+  transition: transform .2s;
+  /* Animation */
+  margin: 0 auto;
+}
+
+.carousel-inner>.item>img:hover {
+  transform: scale(1.1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.carousel-content-wrapper {
+  width: 50%;
+  margin: auto;
+}
+
+.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: yellow;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+#loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('/images/loading.gif') 50% 50% no-repeat rgb(249, 249, 249);
+}
+
+body {
+  overflow: hidden;
+}
+
+.contact__section {
+  background-color: rgb(10, 5, 5);
+  color: white !important;
+}
+
+label {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.flag-container {
+  height: 42px;
+  color: black;
+}
+
+.contact__input {
+  width: 60%;
+  margin-bottom: 5px;
+}
+
+.intl-tel-input.allow-dropdown {
+  width: 100% !important;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.intl-tel-input.separate-dial-code .selected-dial-code {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 28px;
+  padding-right: 20px;
+}
+
+#mobile {
+  margin-bottom: 10px !important;
+}
+
+.iti__flag {
+  background-image: url("../../plugins\contact-international\img\flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../../plugins/contact-international/img/flags@2x.png");
+  }
+}
+
+.fab__icon {
+  animation-name: fabicon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fabicon {
+  0%   {bottom:0px;}
+  50%  {bottom:20px;}
+  100% {bottom:0px;}
+}
+
+@media screen and (min-width: 991px) {
+
+  .back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: yellow;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+
+  /* Preloader */
+
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+  }
+
+  .contact__header {
+    font-size: 42px;
+  }
+
+  #status {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 42%;
+    /* centers the loading animation horizontally one the screen */
+    top: 30%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(https://miro.medium.com/max/1600/1*CsJ05WEGfunYMLGfsT2sXA.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+  }
+
+  .contact__div {
+    padding: 50px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .mt-1 {
+    margin-top: 5px;
+  }
+
+  .mt-2 {
+    margin-top: 10px;
+  }
+
+  .mt-3 {
+    margin-top: 15px;
+  }
+
+  .mt-4 {
+    margin-top: 20px;
+  }
+
+  .mt-5 {
+    margin-top: 25px;
+  }
+
+  .carousel-caption {
+    display: block;
+  }
+
+  .carousel-inner>.item {
+    padding: 40px;
+  }
+
+  .carousel-inner>.item>img,
+  .carousel-inner>.item>a>img {
+    max-width: 100%;
+  }
+
+  .carousel-inner>.item {
+    padding: 0 !important;
+  }
+
+  .carousel-caption {
+    top: 25%;
+  }
+
+  .back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: yellow;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+
+  .contact__header {
+    font-size: 21px;
+  }
+
+  .normal__text {
+    font-size: 14px;
+  }
+
+  /* Preloader */
+
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+  }
+
+  #status {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 27%;
+    padding: 200px;
+    /* centers the loading animation horizontally one the screen */
+    top: 35%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(https://miro.medium.com/max/1600/1*CsJ05WEGfunYMLGfsT2sXA.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+  }
+
+  #contact-section {
+    padding: 50px 20px;
+  }
+
+  .footer-demo {
+    display: none;
+  }
+
+}
